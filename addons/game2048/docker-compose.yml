@@ -1,0 +1,7 @@
+    image: alexwhen/docker-2048
+    container_name: dapps_game2048
+    ports:
+      - "${GAME_2048_HOST_PORT}:80"
+    restart: always
+    networks:
+      - default
