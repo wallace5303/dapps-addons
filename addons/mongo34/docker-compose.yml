@@ -1,0 +1,18 @@
+version: "3"
+services:
+  mongo34:
+    image: mongo:${MONGODB_VERSION}
+    container_name: dapps-mongo34
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: "${MONGODB_INITDB_ROOT_USERNAME}"
+        MONGO_INITDB_ROOT_PASSWORD: "${MONGODB_INITDB_ROOT_PASSWORD}"
+        TZ: "$TZ"
+    volumes:
+      - ${MONGODB_DATA_DIR}:/data/db:rw
+      - ${MONGODB_DATA_DIR}/mongo_key:/mongo:rw
+    ports:
+       - "${MONGODB_HOST_PORT}:27017"
+    networks:
+       - default
+    command:
+       --auth    
