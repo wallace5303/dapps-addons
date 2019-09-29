@@ -1,0 +1,15 @@
+version: "3"
+services:
+  redis5:
+    image: redis:${REDIS_VERSION}
+    container_name: dapps-redis5
+    ports:
+      - "${REDIS_HOST_PORT}:6379"
+    volumes:
+      - ${REDIS_CONF_FILE}:/etc/redis.conf:ro
+    restart: always
+    entrypoint: ["redis-server", "/etc/redis.conf"]
+    environment:
+      TZ: "$TZ"
+    networks:
+      - default
