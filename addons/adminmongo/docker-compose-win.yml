@@ -1,0 +1,14 @@
+version: "3"
+services:
+  adminmongo:
+    image: mrvautin/adminmongo
+    container_name: dapps-adminmongo
+    ports:
+      - "${ADMINMONGO_HOST_PORT}:1234"
+    environment:
+      HOST: "${ADMINMONGO_HOST}"
+      DB_HOST: "${ADMINMONGO_DB_HOST}"
+      DB_PORT: "${ADMINMONGO_DB_PORT}"
+      TZ: "$TZ"
+    networks:
+      - default
