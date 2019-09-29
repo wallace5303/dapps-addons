@@ -10,3 +10,4 @@ nginx116: 80/443
 redis5: 6379
 phpmyadmin: 8002
 adminmongo: 8003
+php72: 9000
