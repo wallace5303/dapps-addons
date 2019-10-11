@@ -5,6 +5,11 @@
 端口：3307
 
 
-
+## 说明
+1. 查看容器：```$ docker container ls```
+2. 进入容器：
+   ```
+    docker exec -it dapps-mysql80 /bin/bash
+   ```
 
 
