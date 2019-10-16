@@ -16,8 +16,8 @@ ENV GIT_MIRROR_URL=https://gitee.com/mirrors/YApi.git
 
 WORKDIR ${YAPI_DIR}
 
-COPY entrypoint.sh /bin
-COPY wait-for-it.sh /
+COPY ./script/entrypoint.sh /bin
+COPY ./script/wait-for-it.sh /
 
 RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main/" > /etc/apk/repositories
 RUN apk update \
