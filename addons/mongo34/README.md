@@ -9,6 +9,9 @@
 2. 进入容器：
    ```
     docker exec -it dapps-mongo34 /bin/bash
+
+    # 查看信息
+    mongo
    ```
 
 
