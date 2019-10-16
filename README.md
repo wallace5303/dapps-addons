@@ -13,3 +13,6 @@
 9. phpmyadmin: 8002
 10. adminmongo: 8003
 11. php72: 9000
+12. php56: 9001
+13. php71: 9002
+14. php73: 9003

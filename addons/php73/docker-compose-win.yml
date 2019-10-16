@@ -1,0 +1,24 @@
+version: "3"
+services:
+  php73:
+    container_name: dapps-php73
+    build:
+      context: ./
+      args:
+        PHP_VERSION: ${PHP73_VERSION}
+        ALPINE_REPOSITORIES: ${ALPINE_REPOSITORIES}
+        PHP_EXTENSIONS: ${PHP73_EXTENSIONS}
+        MORE_EXTENSION_INSTALLER: php73.sh
+        TZ: "$TZ"
+    ports:
+      - "${PHP73_HOST_PORT}:9000"
+    volumes:
+      - ${SOURCE_DIR}:/var/www/html/:rw
+      - ${PHP73_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
+      - ${PHP73_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ${PHP73_LOG_DIR}:/var/log/php
+    restart: always
+    cap_add:
+      - SYS_PTRACE
+    networks:
+      - default
