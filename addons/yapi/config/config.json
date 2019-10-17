@@ -2,9 +2,9 @@
    "port": "8004",
    "adminAccount": "admin@admin.com",
    "db": {
-     "servername": "dapps-mongo34",
+     "servername": "dapps-mongo-yapi",
      "DATABASE": "yapi",
-     "port": 27017,
+     "port": 27019,
      "user": "root",
      "pass": "123456",
      "authSource": "admin"
