@@ -1,0 +1,14 @@
+version: "3"
+services:
+  py12306:
+    build: .
+    container_name: dapps-py12306
+    ports:
+      - "${PY12306_HOST_PORT}:8008"
+    volumes:
+      - ${PY12306_CONF_FILE}:/config/env.py
+      - py12306:/data
+    restart: always
+
+volumes:
+  py12306:
