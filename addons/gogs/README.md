@@ -34,12 +34,7 @@
     ![](http://img02.shangguantv.com/pic/20190827140910.png)
     
 
-3. Gogs数据目录：
- 
-    ./dnnmmp/data/gogs
-
-
-4. 文档：
+3. 文档：
 
     [Gogs官方文档](https://gogs.io/docs)
 
