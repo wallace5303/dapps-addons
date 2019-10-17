@@ -31,7 +31,7 @@
         location ~ \.php$ {
             # docker
             root /var/www/html/test/shop/public;
-            fastcgi_pass php73:9003; # 或者：127.0.0.1:9003
+            fastcgi_pass 本机ip:9003; # 或者：127.0.0.1:9003 或者：php73:9003 或者：dapps-php73:9003
             #fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
 
             #fastcgi_pass unix:/dev/shm/php-cgi.sock;
