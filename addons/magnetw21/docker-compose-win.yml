@@ -1,0 +1,15 @@
+version: "3"
+services:
+  magnetw21:
+    image: 'gowah/magnetw-web'
+    container_name: dapps-magnetw21
+    ports:
+      - "${MAGNETW_HOST_PORT}:8080"
+    networks:
+      - default
+    environment:
+      TZ: "$TZ"
+    restart: always
+
+networks:
+  default:
