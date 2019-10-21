@@ -1,15 +1,8 @@
 version: "3"
 services:
-  php56:
-    container_name: dapps-php56
-    build:
-      context: ./
-      args:
-        PHP_VERSION: ${PHP56_VERSION}
-        ALPINE_REPOSITORIES: ${ALPINE_REPOSITORIES}
-        PHP_EXTENSIONS: ${PHP56_EXTENSIONS}
-        MORE_EXTENSION_INSTALLER: php56.sh
-        TZ: "$TZ"
+  php-5-6-40:
+    image: 530353222/php:5.6.40
+    container_name: dapps-php-5-6-40
     ports:
       - "${PHP56_HOST_PORT}:9000"
     volumes:

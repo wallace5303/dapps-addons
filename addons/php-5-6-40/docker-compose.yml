@@ -1,0 +1,17 @@
+version: "3"
+services:
+  php-5-6-40:
+    image: 530353222/php:5.6.40
+    container_name: dapps-php-5-6-40
+    ports:
+      - "${PHP56_HOST_PORT}:9000"
+    volumes:
+      - ${SOURCE_DIR}:/var/www/html/:rw
+      - ${PHP56_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
+      - ${PHP56_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ${PHP56_LOG_DIR}:/var/log/php
+    restart: always
+    cap_add:
+      - SYS_PTRACE
+    networks:
+      - default

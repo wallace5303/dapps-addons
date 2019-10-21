@@ -1,0 +1,17 @@
+version: "3"
+services:
+  php-7-3-10:
+    image: 530353222/php:7.3.10
+    container_name: dapps-php-7-3-10
+    ports:
+      - "${PHP73_HOST_PORT}:9000"
+    volumes:
+      - ${SOURCE_DIR}:/var/www/html/:rw
+      - ${PHP73_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
+      - ${PHP73_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ${PHP73_LOG_DIR}:/var/log/php
+    restart: always
+    cap_add:
+      - SYS_PTRACE
+    networks:
+      - default

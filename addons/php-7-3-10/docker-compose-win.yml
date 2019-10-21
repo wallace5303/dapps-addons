@@ -1,15 +1,8 @@
 version: "3"
 services:
-  php73:
-    container_name: dapps-php73
-    build:
-      context: ./
-      args:
-        PHP_VERSION: ${PHP73_VERSION}
-        ALPINE_REPOSITORIES: ${ALPINE_REPOSITORIES}
-        PHP_EXTENSIONS: ${PHP73_EXTENSIONS}
-        MORE_EXTENSION_INSTALLER: php73.sh
-        TZ: "$TZ"
+  php-7-3-10:
+    image: 530353222/php:7.3.10
+    container_name: dapps-php-7-3-10
     ports:
       - "${PHP73_HOST_PORT}:9000"
     volumes:
