@@ -1,8 +1,8 @@
 version: "3"
 services:
-  php-7.2.21:
+  php-7-2-21:
     image: 530353222/php:7.2.21
-    container_name: dapps-php-7.2.21
+    container_name: dapps-php-7-2-21
     ports:
       - "${PHP72_HOST_PORT}:9000"
     volumes:
