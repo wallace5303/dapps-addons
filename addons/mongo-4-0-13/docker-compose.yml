@@ -1,8 +1,8 @@
 version: "3"
 services:
-  mongo40:
+  mongo-4-0-13:
     image: mongo:${MONGODB_VERSION}
-    container_name: dapps-mongo40
+    container_name: dapps-mongo-4-0-13
     environment:
         MONGO_INITDB_ROOT_USERNAME: "${MONGODB_INITDB_ROOT_USERNAME}"
         MONGO_INITDB_ROOT_PASSWORD: "${MONGODB_INITDB_ROOT_PASSWORD}"
