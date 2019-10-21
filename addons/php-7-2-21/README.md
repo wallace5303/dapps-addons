@@ -6,7 +6,7 @@
 1. 查看容器：```$ docker container ls```
 2. 进入容器：
    ```
-    docker exec -it dapps-php72 /bin/bash
+    docker exec -it dapps-php-7-2-21 /bin/bash
 
     # 查看信息
     php -v
@@ -31,7 +31,7 @@
         location ~ \.php$ {
             # docker
             root /var/www/html/test/shop/public;
-            fastcgi_pass 本机ip:9000; # 或者：127.0.0.1:9000 或者：php72:9000 或者：dapps-php72:9000
+            fastcgi_pass 本机ip:9000; # 或者：127.0.0.1:9000 或者：php-7-2-21:9000 或者：dapps-php-7-2-21:9000
             #fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
 
             #fastcgi_pass unix:/dev/shm/php-cgi.sock;

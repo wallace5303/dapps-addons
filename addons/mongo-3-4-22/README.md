@@ -8,7 +8,7 @@
 1. 查看容器：```$ docker container ls```
 2. 进入容器：
    ```
-    docker exec -it dapps-mongo34 /bin/bash
+    docker exec -it dapps-mongo-3-4-22 /bin/bash
 
     # 查看信息
     mongo
