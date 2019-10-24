@@ -1,0 +1,35 @@
+version: "3"
+services:
+  wordpress:
+    image: wordpress
+    container_name: dapps-wordpress
+    ports:
+      - "${WORDPRESS_HOST_PORT}:80"
+    restart: always
+    volumes:
+      - ${SOURCE_DIR}:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: wordpress-mysql:3306
+      WORDPRESS_DB_USER: "${MYSQL_USER}"
+      WORDPRESS_DB_PASSWORD: "${MYSQL_PASSWORD}"
+      WORDPRESS_DB_NAME: "${MYSQL_DATABASE}"
+      TZ: "$TZ"
+    networks:
+      - default
+    depends_on:
+      - wordpress-mysql
+
+  wordpress-mysql:
+    image: mysql:${MYSQL_VERSION}
+    container_name: dapps-wordpress-mysql
+    volumes:
+      - ${MYSQL_CONF_FILE}:/etc/mysql/conf.d/mysql.cnf:ro
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+      TZ: "$TZ"
+    networks:
+      - default
