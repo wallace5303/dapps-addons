@@ -1,0 +1,16 @@
+version: "3"
+services:
+  baidupcs-go:
+    container_name: dapps-baidupcs-go
+    build:
+      context: ./
+    ports:
+      - "${BAIDUPCS_GO_HOST_PORT}:80" 
+    volumes:
+      - ${DOWNLOAD_DIR}:/home
+      - ${SOURCE_DIR}:/var/www/html/:rw
+    restart: always
+    environment:
+      TZ: "$TZ"
+    networks:
+      - default
