@@ -23,6 +23,6 @@
 
 3. 更多使用方式
    
-   [BaiduPCS-Go百度网盘客户端](https://github.com/iikira/BaiduPCS-Go#%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95)
+   [BaiduPCS-Go百度网盘客户端](https://github.com/iikira/BaiduPCS-Go#%E5%91%BD%E4%BB%A4%E5%88%97%E8%A1%A8%E5%8F%8A%E8%AF%B4%E6%98%8E)
 
 
