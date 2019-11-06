@@ -1,0 +1,14 @@
+version: "3"
+services:
+  baidupcs-web:
+    image: 530353222/baidupcs-web:3.6.8
+    container_name: dapps-baidupcs-web
+    ports:
+      - "${BAIDUPCS_WEB_HOST_PORT}:5299" 
+    volumes:
+      - ${DOWNLOAD_DIR}:/root/Downloads
+    restart: always
+    environment:
+      TZ: "$TZ"
+    networks:
+      - default
