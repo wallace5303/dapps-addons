@@ -14,7 +14,7 @@
 
 ![](https://i.loli.net/2019/11/04/RoxOCNnWEdaHFLw.png)
 
-![](http://img02.shangguantv.com/pic/20191104160815.png)
+![](https://i.loli.net/2019/11/06/G5h1pMCSLD7RqQz.png)
 
 ## 特殊资源下载
 
