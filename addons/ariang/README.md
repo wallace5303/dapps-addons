@@ -16,11 +16,6 @@
 
 ![](https://i.loli.net/2019/11/06/G5h1pMCSLD7RqQz.png)
 
-## 特殊资源下载
-
-![](https://i.loli.net/2019/11/06/3DdWuUlxBOfgaNC.png)
-
-![](https://i.loli.net/2019/11/06/wtf1RSnL7Kema2p.png)
 
 
 
