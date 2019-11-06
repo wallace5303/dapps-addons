@@ -6,15 +6,23 @@
 
 将标注3，改为8011
 
+## 文件保存位置：
+    
+    ./dapps/docker/addons/ariang/downloads 目录下
+
 ## 下载速度对比
 
 ![](https://i.loli.net/2019/11/04/RoxOCNnWEdaHFLw.png)
 
 ![](http://img02.shangguantv.com/pic/20191104160815.png)
 
-## 文件保存位置：
-    
-    ./dapps/docker/addons/ariang/downloads 目录下
+## 特殊资源下载
+
+![](https://i.loli.net/2019/11/06/3DdWuUlxBOfgaNC.png)
+
+![](https://i.loli.net/2019/11/06/wtf1RSnL7Kema2p.png)
+
+
 
 
 
