@@ -7,7 +7,7 @@
 
 2. 下载的文件位置：./dapps/docker/addons/baidupcs-web/downloads
 
-3. 问题
+3. 其他注意事项
 
 - 验证码：如果登录界面没有显示验证码，请选择 浏览器模式->急速模式（闪电图标）
   
