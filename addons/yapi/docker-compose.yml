@@ -12,7 +12,6 @@ services:
     volumes:
       - ${YAPI_CONFIG_FILE}:/home/config.json:rw
       - ${YAPI_CONFIG_FILE}:/home/vendors/config.json:rw
-      - ${YAPI_LOG_DIR}:/home/log
     depends_on:
       - yapi-mongo
     restart: always
