@@ -1,5 +1,11 @@
 # dapps-addons
 
+## 一些默认的基础镜像
+- golang:1.13-stretch
+- alpine:latest
+- python:3.6.6-slim
+- node:10.16.3-alpine
+
 ## port list
 
 1. game-2048: 8001
@@ -26,3 +32,4 @@
 22. baidupcs-go: 8010
 23. ariang: 8011
 24. baidupcs-web: 8012
+25. auxpi: 8013
