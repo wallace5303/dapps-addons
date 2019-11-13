@@ -1,0 +1,22 @@
+{
+   "port": "8004",
+   "adminAccount": "admin@admin.com",
+   "db": {
+     "servername": "dapps-yapi-mongo",
+     "DATABASE": "yapi",
+     "port": 27019,
+     "user": "root",
+     "pass": "123456",
+     "authSource": "admin"
+   },
+   "mail": {
+     "enable": true,
+     "host": "smtp.163.com",
+     "port": 465,
+     "from": "***@163.com",
+     "auth": {
+       "user": "***@163.com",
+       "pass": "*****"
+     }
+   }
+ }
