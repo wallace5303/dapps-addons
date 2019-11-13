@@ -4,10 +4,6 @@ LABEL maintainer="kaka996.com"
 ARG YAPI_VERSION
 ARG YAPI_HOST_PORT
 
-# set timezome
-ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-
 ENV YAPI_DIR="/home"
 ENV VENDORS="${YAPI_DIR}/vendors"
 ENV VERSION="${YAPI_VERSION}"
@@ -19,7 +15,7 @@ WORKDIR ${YAPI_DIR}
 COPY ./script/entrypoint.sh /bin
 COPY ./script/wait-for-it.sh /
 
-RUN echo "https://mirror.tuna.tsinghua.edu.cn/alpine/v3.4/main/" > /etc/apk/repositories
+RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories;
 RUN apk update \
         && apk upgrade \
         && apk add --no-cache git curl python make openssl tar gcc bash \

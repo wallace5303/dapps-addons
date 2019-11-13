@@ -14,27 +14,17 @@ services:
       - ${YAPI_CONFIG_FILE}:/home/vendors/config.json:rw
       - ${YAPI_LOG_DIR}:/home/log
     depends_on:
-      - mongo-yapi
-    cap_add:
-      - SYS_PTRACE
+      - yapi-mongo
     restart: always
     environment:
       TZ: "$TZ"
-    networks:
-      - default
 
-  mongo-yapi:
+  yapi-mongo:
     image: mongo:${MONGODB_VERSION}
-    container_name: dapps-mongo-yapi
+    container_name: dapps-yapi-mongo
     environment:
         MONGO_INITDB_ROOT_USERNAME: "${MONGODB_INITDB_ROOT_USERNAME}"
         MONGO_INITDB_ROOT_PASSWORD: "${MONGODB_INITDB_ROOT_PASSWORD}"
         TZ: "$TZ"
     ports:
        - "${MONGODB_HOST_PORT}:27017"
-    networks:
-       - default
-    command:
-       --auth  
-networks:
-  default:      

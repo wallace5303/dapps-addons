@@ -2,7 +2,7 @@
    "port": "8004",
    "adminAccount": "admin@admin.com",
    "db": {
-     "servername": "dapps-mongo-yapi",
+     "servername": "dapps-yapi-mongo",
      "DATABASE": "yapi",
      "port": 27019,
      "user": "root",
