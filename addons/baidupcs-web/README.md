@@ -16,3 +16,4 @@
 - 下载：不要修改用户设置中的下载路径，否则将无法找到文件。
 
 
+#### 本项目基于开源项目： [BaiduPCS-Web](https://github.com/liuzhuoling2011/baidupcs-web)

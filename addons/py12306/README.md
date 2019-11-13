@@ -26,3 +26,5 @@
 3. 文档：
 
     [官方文档](https://github.com/pjialin/py12306/blob/master/README.md)
+
+#### 本项目基于开源项目： [py12306](https://github.com/pjialin/py12306/blob/master/README.md)

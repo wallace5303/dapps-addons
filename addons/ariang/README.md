@@ -16,7 +16,7 @@
 
 ![](https://i.loli.net/2019/11/06/G5h1pMCSLD7RqQz.png)
 
-
+#### 本项目基于开源项目： [ariang](https://github.com/mayswind/AriaNg)
 
 
 

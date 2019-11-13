@@ -17,3 +17,6 @@
 ![](http://yanxuan.nosdn.127.net/4c9291afedcf7d0baf832aaf20d6d297.png)
 
 ![](http://yanxuan.nosdn.127.net/7f1c37a35d8b3f67c760c59ae5084385.png)
+
+
+#### 本项目基于开源项目： [auxpi](https://github.com/aimerforreimu/auxpi)
