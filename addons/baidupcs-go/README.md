@@ -11,7 +11,7 @@
         # 下载一个压缩包文件，其中：/test/cmder.zip为百度网盘中资料的路径
         BaiduPCS-Go d /test/cmder.zip
 
-        # 默认保存位置
+        # 默认保存位置 （注：dapps项目中的下载或保存路径，不能修改。）
         ./dapps/docker/addons/baidupcs-go/downloads
     ```
 
