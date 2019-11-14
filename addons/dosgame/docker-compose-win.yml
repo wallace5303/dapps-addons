@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dosgame:
+    image: oldiy/dosgame-web-docker:latest
+    container_name: dapps-dosgame
+    ports:
+      - "${DOSGAME_HOST_PORT}:262"
+    restart: always

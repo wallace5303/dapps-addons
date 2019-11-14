@@ -34,5 +34,6 @@
 24. baidupcs-web: 8012
 25. auxpi: 8013
 26. rrshare: 8014
+27. dosgame: 8015
 
 
