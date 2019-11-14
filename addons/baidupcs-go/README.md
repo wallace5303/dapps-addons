@@ -26,4 +26,4 @@
    [BaiduPCS-Go百度网盘客户端](https://github.com/iikira/BaiduPCS-Go)
 
 
-#### 本项目基于开源项目： [BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go)
+本项目基于开源项目： [BaiduPCS-Go](https://github.com/iikira/BaiduPCS-Go)

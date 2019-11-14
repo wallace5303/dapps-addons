@@ -1,0 +1,8 @@
+version: '3'
+services:
+  calibre:
+    image: oldiy/my-calibre-webserver-docker:latest
+    container_name: dapps-calibre
+    ports:
+      - "${CALIBRE_HOST_PORT}:8000"
+    restart: always

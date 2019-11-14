@@ -19,4 +19,4 @@
 ![](https://images.weserv.nl/?url=https://img02.sogoucdn.com/app/a/100520146/d14ca503f297aeb25608822cb67b9d96)
 
 
-#### 本项目基于开源项目： [auxpi](https://github.com/aimerforreimu/auxpi)
+本项目基于开源项目： [auxpi](https://github.com/aimerforreimu/auxpi)

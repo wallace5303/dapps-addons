@@ -35,6 +35,7 @@
 25. auxpi: 8013
 26. rrshare: 8014
 27. dosgame: 8015
-28. transmission： 8016/8017(XXX)
+28. transmission： 
+29. calibre: 8016
 
 
