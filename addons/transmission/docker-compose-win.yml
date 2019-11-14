@@ -1,0 +1,11 @@
+version: '3'
+services:
+  transmission:
+    image: oldiy/transmission-twc:latest
+    container_name: dapps-transmission
+    ports:
+      - "${TRANSMISSION_HOST_PORT}:9091"
+      - "${TRANSMISSION_RPC_PORT}:45555"
+    volumes:
+      - ${TRANSMISSION_DATA_DIR}:/downloads
+    restart: always
