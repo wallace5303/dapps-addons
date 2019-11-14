@@ -1,0 +1,10 @@
+version: '3'
+services:
+  youtubedl:
+    image: oldiy/youtube-dl-web:latest
+    container_name: dapps-youtubedl
+    ports:
+      - "${HOST_PORT}:5555"
+    volumes:
+      - ${DATA_DIR}:/youtube_dl
+    restart: always
