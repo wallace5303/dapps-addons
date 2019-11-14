@@ -1,0 +1,10 @@
+version: '3'
+services:
+  rrshare:
+    image: oldiy/rrshare64:latest
+    container_name: dapps-rrshare
+    ports:
+      - "${RRSHARE_HOST_PORT}:3001"
+    volumes:
+      - ${RRSHARE_DATA_DIR}:/opt/work/store
+    restart: always
