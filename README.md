@@ -38,5 +38,6 @@
 28. transmission：
 29. calibre: 8016
 30. youtubedl: 8017
+31. instantbox: 8018
 
 

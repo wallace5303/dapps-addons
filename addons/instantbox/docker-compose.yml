@@ -1,0 +1,32 @@
+version: '3'
+services:
+  server:
+    image: instantbox/instantbox:latest
+    container_name: dapps-instantbox_server
+    environment:
+      - SERVERURL=192.168.10.233
+    networks:
+      - instantbox_net
+
+  frontend:
+    image: instantbox/instantbox-frontend:latest
+    container_name: dapps-instantbox_frontend
+    links:
+      - server
+    ports:
+      - 8018:80
+    networks:
+      - instantbox_net
+
+  cron:
+    image: instantbox/cron:latest
+    container_name: dapps-instantbox_cron
+    links:
+      - frontend
+    environment:
+      - CRON_STRINGS=* * * * * wget -qO /dev/null http://frontend/api/v2/superinspire/prune      
+    networks:
+      - instantbox_net
+
+networks:
+  instantbox_net:    
