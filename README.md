@@ -40,5 +40,6 @@
 30. youtubedl: 8017
 31. instantbox: 8018
 32. nextcloud: 8019
+33. webssh2: 8020
 
 

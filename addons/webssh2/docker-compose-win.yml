@@ -1,0 +1,8 @@
+version: '3'
+services:
+  webssh2:
+    image: oldiy/docker-webssh2:latest
+    container_name: dapps-webssh2
+    ports:
+      - "${HOST_PORT}:2222"
+    restart: always
