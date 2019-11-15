@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nextcloud:
+    image: nextcloud:latest
+    container_name: dapps-nextcloud
+    ports:
+      - "${HOST_PORT}:80"
+    volumes:
+      - ${DATA_DIR}:/var/www/html
+    restart: always
