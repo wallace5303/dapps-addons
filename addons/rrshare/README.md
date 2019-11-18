@@ -2,7 +2,7 @@
 
 安装后打开效果：
 
-![](https://images.weserv.nl/?url=https://img03.sogoucdn.com/app/a/100520146/e7aa88ffc44bb9e91e0df36c3cc3d896)
+![](https://i.loli.net/2019/11/18/XJnCOhUyGYPc7lz.png)
 
 ## 说明
 - 解锁密码：123456
@@ -12,8 +12,8 @@
 ## 软件效果
 
 1. 
-![](https://images.weserv.nl/?url=https://img03.sogoucdn.com/app/a/100520146/e7aa88ffc44bb9e91e0df36c3cc3d896)
-![](https://images.weserv.nl/?url=https://img03.sogoucdn.com/app/a/100520146/e7aa88ffc44bb9e91e0df36c3cc3d896)
+![](https://i.loli.net/2019/11/18/l4PsZHD3MpNaCzF.png)
+![](https://i.loli.net/2019/11/18/AwetvSfHosVC5ml.png)
 
 
 本项目基于官方代码

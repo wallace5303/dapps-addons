@@ -2,7 +2,7 @@
 
 安装后打开效果：
 
-![](https://images.weserv.nl/?url=https://img03.sogoucdn.com/app/a/100520146/62959332d87c3d49aa3ec2d9e997b424)
+![](https://i.loli.net/2019/11/18/FAMBR52tNpd8CeL.png)
 
 ## 默认用户
 - 账号：auxpi@example.com
@@ -11,12 +11,12 @@
 ## 效果
 
 1. 上传
-![](https://images.weserv.nl/?url=https://img01.sogoucdn.com/app/a/100520146/0e38a1029863c68b6fdff52f6474780f)
+![](https://i.loli.net/2019/11/18/tiQDlHC5cqJWSId.png)
 
 2. 图片管理
-![](https://images.weserv.nl/?url=https://img04.sogoucdn.com/app/a/100520146/14998a8a97d81f7a9134fecec1d6cd1c)
+![](https://i.loli.net/2019/11/18/gHrbC7fywT8L9VE.png)
 
-![](https://images.weserv.nl/?url=https://img02.sogoucdn.com/app/a/100520146/d14ca503f297aeb25608822cb67b9d96)
+![](https://i.loli.net/2019/11/18/7ImfeRwjZJ45Eqp.png)
 
 
 本项目基于开源项目： [auxpi](https://github.com/aimerforreimu/auxpi)
