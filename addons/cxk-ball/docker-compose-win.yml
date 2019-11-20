@@ -1,0 +1,11 @@
+version: '3'
+services:
+  cxk-ball:
+    image: 530353222/cxk-ball:latest
+    container_name: dapps-cxk-ball
+    volumes:
+      - ${NGINX_CONFD_DIR}:/etc/nginx/conf.d/:rw
+      - ${NGINX_CONF_FILE}:/etc/nginx/nginx.conf:ro    
+    ports:
+      - "${HOST_PORT}:80"
+    restart: always

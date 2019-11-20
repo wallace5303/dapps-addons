@@ -5,6 +5,7 @@
 - alpine:latest
 - python:3.6.6-slim
 - node:10.16.3-alpine
+- nginx:1.16-alpine
 
 ## port list
 
@@ -41,5 +42,6 @@
 31. instantbox: 8018
 32. nextcloud: 8019
 33. webssh2: 8020
+34. cxk-ball: 8021
 
 
