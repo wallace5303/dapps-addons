@@ -15,4 +15,11 @@
     mysql -V
    ```
 
+## mysql8.0客户端连接报错
+
+原因：
+
+mysql8 之前的版本中加密规则是mysql_native_password,而在mysql8之后,加密规则是caching_sha2_password
+
+解决：https://www.jianshu.com/p/502f41ab2719
 
