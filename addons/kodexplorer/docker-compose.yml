@@ -1,0 +1,8 @@
+version: '3'
+services:
+  kodexplorer:
+    image: 530353222/kodexplorer:4.39
+    container_name: dapps-kodexplorer
+    ports:
+      - "${HOST_PORT}:80"
+    restart: always

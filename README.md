@@ -6,6 +6,7 @@
 - python:3.6.6-slim
 - node:10.16.3-alpine
 - nginx:1.16-alpine
+- php:7.2.21-alpine
 
 ## port list
 
@@ -43,5 +44,6 @@
 32. nextcloud: 8019
 33. webssh2: 8020
 34. cxk-ball: 8021
+35. kodexplorer：8022
 
 
