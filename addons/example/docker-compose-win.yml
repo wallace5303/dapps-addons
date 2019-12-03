@@ -5,4 +5,6 @@ services:
     container_name: dapps-example
     ports:
       - "${HOST_PORT}:80"
+    volumes:
+      - ${SOURCE_DIR}:/home      
     restart: always
