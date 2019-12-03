@@ -12,7 +12,7 @@
 
 ## 软件效果
 
-1. 安装
+1. 安装，记得mysql中新建一个数据库，如：zblog
 ![](https://i.loli.net/2019/12/03/4ndiFW9p8LZPRoV.png)
 
 2. 后台管理
