@@ -1,0 +1,12 @@
+version: '3'
+services:
+  zentao:
+    image: idoop/zentao:11.7
+    container_name: dapps-zentao
+    ports:
+      - "${HOST_PORT}:80"
+    environment:
+        TZ: "$TZ"
+    volumes:
+      - ${SOURCE_DIR}:/opt/zbox/
+    restart: always
