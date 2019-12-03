@@ -1,0 +1,8 @@
+version: '3'
+services:
+  example:
+    image: example
+    container_name: dapps-example
+    ports:
+      - "${HOST_PORT}:80"
+    restart: always

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  typecho:
+    #image: example
+    build: ./
+    container_name: dapps-typecho
+    ports:
+      - "${HOST_PORT}:80"
+    restart: always

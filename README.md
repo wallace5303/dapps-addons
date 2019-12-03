@@ -45,5 +45,6 @@
 33. webssh2: 8020
 34. cxk-ball: 8021
 35. kodexplorer：8022
+36. typecho: 8023
 
 
