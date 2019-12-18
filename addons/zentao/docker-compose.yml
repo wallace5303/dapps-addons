@@ -1,7 +1,7 @@
 version: '3'
 services:
   zentao:
-    image: idoop/zentao:11.7
+    image: idoop/zentao:latest
     container_name: dapps-zentao
     ports:
       - "${HOST_PORT}:80"
