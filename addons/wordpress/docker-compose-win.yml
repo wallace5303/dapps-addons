@@ -4,7 +4,7 @@ services:
     image: wordpress
     container_name: dapps-wordpress
     ports:
-      - "${WORDPRESS_HOST_PORT}:80"
+      - "${HOST_PORT}:80"
     restart: always
     volumes:
       - ${SOURCE_DIR}:/var/www/html

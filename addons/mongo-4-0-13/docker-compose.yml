@@ -1,17 +1,17 @@
 version: "3"
 services:
   mongo-4-0-13:
-    image: mongo:${MONGODB_VERSION}
+    image: mongo:4.0.13
     container_name: dapps-mongo-4-0-13
     environment:
         MONGO_INITDB_ROOT_USERNAME: "${MONGODB_INITDB_ROOT_USERNAME}"
         MONGO_INITDB_ROOT_PASSWORD: "${MONGODB_INITDB_ROOT_PASSWORD}"
         TZ: "$TZ"
     volumes:
-      - ${MONGODB_DATA_DIR}:/data/db:rw
-      - ${MONGODB_DATA_DIR}/mongo_key:/mongo:rw
+      - ${DATA_DIR}:/data/db:rw
+      - ${DATA_DIR}/mongo_key:/mongo:rw
     ports:
-       - "${MONGODB_HOST_PORT}:27017"
+       - "${HOST_PORT}:27017"
     networks:
        - default
     command:

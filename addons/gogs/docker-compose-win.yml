@@ -4,10 +4,10 @@ services:
     image: 'gogs/gogs:latest'
     container_name: dapps-gogs
     ports:
-      - "${GOGS_HOST_PORT_1}:3000"
-      - "${GOGS_HOST_PORT_2}:22"
+      - "${HOST_PORT_1}:3000"
+      - "${HOST_PORT_2}:22"
     volumes:
-      - ${GOGS_DATA_DIR}:/data
+      - ${SOURCE_DIR}:/data
     networks:
       - default
     environment:

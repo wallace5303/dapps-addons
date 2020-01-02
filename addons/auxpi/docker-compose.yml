@@ -4,7 +4,7 @@ services:
     image: 530353222/auxpi:2.3.9
     container_name: dapps-auxpi
     ports:
-      - "${AUXPI_HOST_PORT}:2333"
+      - "${HOST_PORT}:2333"
     restart: always
     networks:
        - default

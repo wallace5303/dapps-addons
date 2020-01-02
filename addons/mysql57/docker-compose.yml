@@ -1,13 +1,13 @@
 version: "3"
 services:
   mysql57:
-    image: mysql:${MYSQL_VERSION}
+    image: mysql:5.7
     container_name: dapps-mysql57
     ports:
-      - "${MYSQL_HOST_PORT}:3306"
+      - "${HOST_PORT}:3306"
     volumes:
-      - ${MYSQL_CONF_FILE}:/etc/mysql/conf.d/mysql.cnf:ro
-      - ${MYSQL_DATA_DIR}:/var/lib/mysql/:rw
+      - ${CONF_FILE}:/etc/mysql/conf.d/mysql.cnf:ro
+      - ${DATA_DIR}:/var/lib/mysql/:rw
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
