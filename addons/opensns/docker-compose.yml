@@ -1,0 +1,10 @@
+version: '3'
+services:
+  opensns:
+    image: 530353222/opensns:6.1.0
+    container_name: dapps-opensns
+    ports:
+      - "${HOST_PORT}:80"
+    volumes:
+      - ${SOURCE_DIR}:/var/www/html
+    restart: always
