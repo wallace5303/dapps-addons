@@ -3,15 +3,14 @@ FROM php:5.6-alpine
 RUN sed -i "s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g" /etc/apk/repositories;
 
 RUN set -x \
-  && mkdir -p /var/www/html \
-  && chown -R www-data /var/www/html \
+  && mkdir -p /usr/src/app \
   && apk --update --no-cache add wget bash
 
-COPY www/opensns.zip /tmp/app.zip
+COPY www/app.zip /home/app.zip
 
-RUN unzip /tmp/app.zip -d /var/www/html \ 
-  && chmod -R 777 /var/www/html \
-  && rm -rf /tmp/*
+RUN set -x \
+  && unzip /home/app.zip -d /usr/src/app \
+  && rm -rf /home/app.zip
 
 RUN set -x \
   && apk add --no-cache --update \
@@ -22,11 +21,12 @@ RUN set -x \
   && docker-php-ext-install -j$(nproc) pdo_mysql mysql mysqli \
   && apk del --no-cache freetype-dev libpng-dev libjpeg-turbo-dev
 
-WORKDIR /var/www/html
-
 COPY entrypoint.sh /usr/local/bin/
+
+WORKDIR /var/www/html
 
 EXPOSE 80
 
-#ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
+
 CMD [ "php", "-S", "0000:80", "-t", "/var/www/html" ]
