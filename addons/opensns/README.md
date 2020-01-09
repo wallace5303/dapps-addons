@@ -6,6 +6,7 @@
 
 ## 说明
 - 需要mysql支持，如果没有，请先安装mysql（应用商店中可一键安装）
+- 代码位置：dapps/docker/addons/opensns/www
 
 ## 软件效果
 
