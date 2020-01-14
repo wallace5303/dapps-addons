@@ -3,7 +3,7 @@
 安装后效果：
 
 ![](https://i.loli.net/2020/01/14/oc7HKCGFj1bn9XL.png)
-![](https://i.loli.net/2020/01/14/OY9exkbgSvdiqHp.png)
+![](https://i.loli.net/2020/01/14/KuTiCUG5rLWAXgz.png)
 
 ## 说明
 - 本机与ubuntu共享目录为：dapps/docker/addons/ubuntu-16-04/www
@@ -18,7 +18,7 @@
     # 查看版本
     cat /etc/os-release
     ```
-    ![](https://i.loli.net/2020/01/14/OY9exkbgSvdiqHp.png)
+    ![](https://i.loli.net/2020/01/14/KuTiCUG5rLWAXgz.png)
 
 2. 测试运行一个脚本
     
