@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ubuntu-18-04:
+    image: 530353222/ubuntu:18.04
+    container_name: dapps-ubuntu-18-04
+    volumes:
+      - ${SOURCE_DIR}:/home
+    working_dir: /home  
+    restart: always
