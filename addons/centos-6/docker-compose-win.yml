@@ -1,0 +1,9 @@
+version: '3'
+services:
+  centos-6:
+    image: 530353222/centos:6
+    container_name: dapps-centos-6
+    volumes:
+      - ${SOURCE_DIR}:/home
+    working_dir: /home  
+    restart: always
