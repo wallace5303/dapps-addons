@@ -5,8 +5,6 @@ services:
     container_name: dapps-yapi
     ports:
       - "${HOST_PORT}:3000"
-    volumes:
-      - ${SOURCE_DIR}:/yapi
     environment:
       - YAPI_ADMIN_ACCOUNT=admin@admin.com
       - YAPI_ADMIN_PASSWORD=123456
