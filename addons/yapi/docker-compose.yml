@@ -1,29 +1,28 @@
-version: "3"
+version: '3'
 services:
   yapi:
+    image: 530353222/yapi:latest
     container_name: dapps-yapi
-    build:
-      context: ./
-      args:
-          YAPI_VERSION: ${YAPI_VERSION}
-          YAPI_HOST_PORT: ${YAPI_HOST_PORT}
     ports:
-      - "${YAPI_HOST_PORT}:${YAPI_HOST_PORT}"
+      - "${HOST_PORT}:3000"
     volumes:
-      - ${YAPI_CONFIG_FILE}:/home/config.json:rw
-      - ${YAPI_CONFIG_FILE}:/home/vendors/config.json:rw
+      - ${SOURCE_DIR}:/yapi
+    environment:
+      - YAPI_ADMIN_ACCOUNT=admin@admin.com
+      - YAPI_ADMIN_PASSWORD=123456
+      - YAPI_CLOSE_REGISTER=false
+      - YAPI_DB_SERVERNAME=yapi-mongo
+      - YAPI_DB_PORT=27017
+      - YAPI_DB_DATABASE=yapi
+      - YAPI_MAIL_ENABLE=false
+      - YAPI_LDAP_LOGIN_ENABLE=false
+      - YAPI_PLUGINS=[]
     depends_on:
       - yapi-mongo
-    restart: always
-    environment:
-      TZ: "$TZ"
-
+    restart: unless-stopped
   yapi-mongo:
-    image: mongo:${MONGODB_VERSION}
+    image: mongo:3.4.22
     container_name: dapps-yapi-mongo
-    environment:
-        MONGO_INITDB_ROOT_USERNAME: "${MONGODB_INITDB_ROOT_USERNAME}"
-        MONGO_INITDB_ROOT_PASSWORD: "${MONGODB_INITDB_ROOT_PASSWORD}"
-        TZ: "$TZ"
-    ports:
-       - "${MONGODB_HOST_PORT}:27017"
+    expose:
+      - 27017
+    restart: unless-stopped
