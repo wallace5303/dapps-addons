@@ -5,6 +5,9 @@
 ![](https://i.loli.net/2019/11/26/NwzXVqpMrxlnk62.png)
 
 
+## 说明
+- 注：配置文件目录：./nextcloud/config
+    
 ## 软件效果
 
 1. 登录
