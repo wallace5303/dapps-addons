@@ -6,7 +6,7 @@ services:
     ports:
       - "${HOST_PORT}:80"
     volumes:
-      - ${CONF_DIR}:/var/www/html/config/:rw
+      - ${CONF_DIR}:/var/www/html/config
     restart: always
     environment:
       TZ: "$TZ"
