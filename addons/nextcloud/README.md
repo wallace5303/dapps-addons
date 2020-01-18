@@ -11,7 +11,7 @@ web版
 
 ## 说明
 - 注：配置文件目录：./nextcloud/config
-    
+- 官方软件（手机，PC）下载：https://nextcloud.com/install/#    
 ## 软件效果
 
 1. 登录
